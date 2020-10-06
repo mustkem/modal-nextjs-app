@@ -30,3 +30,39 @@ This app has below features
 4. Immer
 
 Continued...
+
+CSS
+To add global css add in `pages/_app.js` file. Like below
+
+`import '../styles.css'`
+
+To add component specific css we have we fesiable options
+
+1. modules based css
+   https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css
+
+2. CSS-in-JS
+   a. Styled Components
+
+   ` function HelloWorld() { return ( <div> Hello world <p>scoped!</p> <style jsx>{`
+   p {
+   color: blue;
+   }
+   div {
+   background: red;
+   }
+   @media (max-width: 600px) {
+   div {
+   background: blue;
+   }
+   }
+   `}</style>
+   </div>
+   )
+   }
+
+export default HelloWorld
+`
+
+3. Add scss files
+   continuing...

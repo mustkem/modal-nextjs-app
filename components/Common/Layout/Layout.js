@@ -1,13 +1,14 @@
 import React from "react";
-// import Header from "../Header";
+import Header from "../Header";
 // import Footer from "../Footer";
 
-import "./style/index.module.scss";
+import Style from "./style";
 
 function Layout(props) {
   return (
     <div className="layout">
-      c{/* <Header /> */}
+      {<Style />}
+      <Header />
       {props.children}
       {/* <Footer /> */}
     </div>

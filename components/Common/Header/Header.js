@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
-import "./style/index.scss";
+// import "./style/index.scss";
 
 function Header() {
   return (
@@ -10,19 +9,9 @@ function Header() {
         <nav className="nav">
           <ul>
             <li>
-              <NavLink exact to="/">
+              <a exact href="/">
                 Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/about">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/modal-form">
-                Modal Form
-              </NavLink>
+              </a>
             </li>
           </ul>
         </nav>
